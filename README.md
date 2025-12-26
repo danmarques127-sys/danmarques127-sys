@@ -5,6 +5,9 @@ I'm a **full-stack developer** focused on building **real, practical solutions**
 I enjoy turning ideas into working products, especially when they solve real problems and can be used in the real world.
 
 ---
+🚀 [My Portfolio Website](https://...)
+📫 Contact: marquesdangelo@hotmail.com
+🔗 LinkedIn: https://linkedin.com/in/…
 
 ## 🚀 What I do
 
