@@ -111,32 +111,22 @@ Production website for a real company, focused on SEO, performance, and conversi
 
 ---
 
-## 🏆 GitHub Achievements
+## 🏆 GitHub Achievements 
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=danmarques127-sys&theme=darkhub&no-frame=true&row=1&column=6&margin-w=10&margin-h=10" />
-  </a>
-</p>
+<p align="center"> 
+<img src="https://github-profile-trophy.vercel.app/?username=danmarques127-sys&theme=darkhub&no-frame=true&row=1&column=6" /> 
+</p> 
 
----
+--- 
 
-## 📊 GitHub Activity
+## 📊 GitHub Activity  
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=danmarques127-sys&show_icons=true&theme=dark&hide_border=true&cache_seconds=86400" />
-</p>
+<p align="center"> 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=danmarques127-sys&theme=dark&hide_border=true" /> 
+</p> 
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=danmarques127-sys&theme=dark&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=danmarques127-sys&layout=compact&theme=dark&hide_border=true&cache_seconds=86400" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=danmarques127-sys&custom_title=Activity%20Graph&bg_color=020617&color=FFD700&line=FFD700&point=E5E7EB&hide_border=true" />
+<p align="center"> 
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=danmarques127-sys&bg_color=020617&color=FFD700&line=FFD700&point=E5E7EB&hide_border=true" /> 
 </p>
 
 ---
