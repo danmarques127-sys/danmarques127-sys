@@ -71,15 +71,27 @@ Rulesets • Seasons • Deterministic logic • Data-driven systems (Unity / C#
   <img src="https://skillicons.dev/icons?i=html,css,js" />
 </p>
 
+---
+
 ### ⚙️ Backend
 <p>
-  <img src="https://skillicons.dev/icons?i=php,mysql" />
+  <img src="https://skillicons.dev/icons?i=php,mysql,python,nodejs,dart,flutter" />
 </p>
+
+---
 
 ### 🧠 Systems & Tools
 <p>
   <img src="https://skillicons.dev/icons?i=git,github,unity,cs" />
 </p>
+
+---
+
+### 🧪 Languages & Experiments
+<p>
+  <img src="https://skillicons.dev/icons?i=hack" />
+</p>
+
 
 ---
 
