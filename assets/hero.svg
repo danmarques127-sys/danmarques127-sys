@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Dan Marques — Galactic Systems Architect">
+  <defs>
+    <!-- Deep space gradients -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#030712"/>
+      <stop offset="80%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+      <animate attributeName="x1" dur="14s" values="0;0.2;0" repeatCount="indefinite"/>
+      <animate attributeName="y2" dur="18s" values="1;0.8;1" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="nebulaA" cx="30%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.20"/>
+      <stop offset="35%" stop-color="#8B5CF6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nebulaB" cx="75%" cy="55%" r="80%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.10"/>
+      <stop offset="35%" stop-color="#FFD700" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soft glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong title glow -->
+    <filter id="titleGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b1"/>
+      <feColorMatrix in="b1" type="matrix"
+        values="1 0 0 0 0.98
+                0 1 0 0 0.84
+                0 0 1 0 0.10
+                0 0 0 1 0" result="goldBlur"/>
+      <feMerge>
+        <feMergeNode in="goldBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Star twinkle -->
+    <filter id="star">
+      <feGaussianBlur stdDeviation="0.6" result="s"/>
+      <feMerge>
+        <feMergeNode in="s"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle scanline -->
+    <pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="transparent"/>
+      <rect y="0" width="6" height="1" fill="#FFFFFF" opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- Nebula layers -->
+  <g opacity="1">
+    <ellipse cx="360" cy="130" rx="520" ry="270" fill="url(#nebulaA)">
+      <animate attributeName="cx" dur="18s" values="330;390;330" repeatCount="indefinite"/>
+      <animate attributeName="cy" dur="20s" values="120;145;120" repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse cx="860" cy="210" rx="620" ry="320" fill="url(#nebulaB)">
+      <animate attributeName="cx" dur="22s" values="840;890;840" repeatCount="indefinite"/>
+      <animate attributeName="cy" dur="24s" values="200;230;200" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Starfield (handcrafted, deterministic) -->
+  <g filter="url(#star)">
+    <!-- Big stars -->
+    <circle cx="110" cy="70" r="1.8" fill="#FFFFFF">
+      <animate attributeName="opacity" dur="2.6s" values="0.25;1;0.25" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="66" r="1.6" fill="#FFFFFF">
+      <animate attributeName="opacity" dur="3.0s" values="0.3;1;0.3" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="290" r="1.8" fill="#FFFFFF">
+      <animate attributeName="opacity" dur="2.2s" values="0.2;1;0.2" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="300" r="1.5" fill="#FFFFFF">
+      <animate attributeName="opacity" dur="2.8s" values="0.2;0.9;0.2" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Small stars (static + subtle twinkle) -->
+    <g fill="#FFFFFF" opacity="0.9">
+      <circle cx="170" cy="120" r="1"/>
+      <circle cx="220" cy="50" r="0.9"/>
+      <circle cx="310" cy="90" r="0.9"/>
+      <circle cx="420" cy="40" r="0.8"/>
+      <circle cx="540" cy="80" r="0.8"/>
+      <circle cx="690" cy="120" r="0.9"/>
+      <circle cx="760" cy="60" r="0.9"/>
+      <circle cx="880" cy="140" r="0.8"/>
+      <circle cx="940" cy="200" r="0.9"/>
+      <circle cx="1060" cy="160" r="0.8"/>
+      <circle cx="1120" cy="110" r="0.8"/>
+      <circle cx="610" cy="250" r="0.9"/>
+      <circle cx="520" cy="300" r="0.8"/>
+      <circle cx="420" cy="270" r="0.8"/>
+      <circle cx="150" cy="260" r="0.9"/>
+      <circle cx="70" cy="210" r="0.8"/>
+    </g>
+
+    <!-- Twinkle group -->
+    <g opacity="0.7">
+      <circle cx="600" cy="40" r="1.1" fill="#FFD700">
+        <animate attributeName="opacity" dur="1.9s" values="0.05;0.9;0.05" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="820" cy="95" r="1.0" fill="#FFFFFF">
+        <animate attributeName="opacity" dur="2.3s" values="0.08;1;0.08" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="430" cy="150" r="1.0" fill="#FFFFFF">
+        <animate attributeName="opacity" dur="2.1s" values="0.08;0.95;0.08" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Shooting star -->
+  <g opacity="0.9" filter="url(#glow)">
+    <path d="M -120 60 L 260 -40" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="6.5s" values="0;0;1;0" keyTimes="0;0.62;0.72;1" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" dur="6.5s"
+        values="0 0; 980 310; 980 310" keyTimes="0;0.72;1" repeatCount="indefinite"/>
+    </path>
+    <path d="M -120 60 L 260 -40" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="6.5s" values="0;0;0.85;0" keyTimes="0;0.62;0.72;1" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" dur="6.5s"
+        values="0 0; 980 310; 980 310" keyTimes="0;0.72;1" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Decorative ring / orbit -->
+  <g opacity="0.25">
+    <ellipse cx="600" cy="210" rx="520" ry="170" fill="none" stroke="#FFD700" stroke-width="1">
+      <animateTransform attributeName="transform" type="rotate" dur="30s" values="0 600 210;360 600 210" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="600" cy="210" rx="420" ry="135" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.15">
+      <animateTransform attributeName="transform" type="rotate" dur="26s" values="360 600 210;0 600 210" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Scanline overlay -->
+  <rect width="1200" height="360" fill="url(#scan)" opacity="1"/>
+
+  <!-- Title + subtitle -->
+  <g>
+    <text x="600" y="168" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+          font-size="54" fill="#E5E7EB" letter-spacing="2" filter="url(#titleGlow)">
+      DAN MARQUES
+    </text>
+
+    <text x="600" y="206" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+          font-size="16" fill="#FFD700" opacity="0.95" letter-spacing="1.2">
+      SYSTEMS ARCHITECT • FULL-STACK ENGINEER • SIMULATION ENGINES
+    </text>
+
+    <text x="600" y="236" text-anchor="middle"
+          font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'"
+          font-size="14" fill="#E5E7EB" opacity="0.88">
+      Building long-lived software: secure platforms, product systems, and deterministic game logic.
+    </text>
+  </g>
+
+  <!-- Bottom motto -->
+  <g opacity="0.92">
+    <text x="600" y="316" text-anchor="middle"
+          font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial"
+          font-size="13" fill="#E5E7EB">
+      “I don’t chase trends. I design foundations others build on.”
+    </text>
+  </g>
+</svg>
