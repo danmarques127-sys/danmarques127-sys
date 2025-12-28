@@ -109,14 +109,6 @@ Production website for a real company, focused on SEO, performance, and conversi
 - 🔹 Advance simulation engines with AI-driven systems
 - 🔹 Evolve projects into fully polished products
 
----
-
-## 🏆 GitHub Achievements 
-
-<p align="center"> 
-<img src="https://github-profile-trophy.vercel.app/?username=danmarques127-sys&theme=darkhub&no-frame=true&row=1&column=6" /> 
-</p> 
-
 --- 
 
 ## 📊 GitHub Activity  
